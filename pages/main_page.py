@@ -14,7 +14,7 @@ class MainPage(BasePage):
 
     @allure.step('Проверка что отображается раздел "Конструктор"')
     def check_constructor_section(self):
-        assert self.find_element_with_wait(MainPageLocators.TITLE_IN_THE_MAIN_PAGE).text == 'Соберите бургер'
+        assert self.get_value(MainPageLocators.TITLE_IN_THE_MAIN_PAGE) == 'Соберите бургер'
 
     @allure.step('Нажатие на кнопку "Лента заказов"')
     def click_on_orders_feed(self):
@@ -22,7 +22,7 @@ class MainPage(BasePage):
 
     @allure.step('Проверка что отображается раздел "Лента заказов"')
     def check_orders_feed_section(self):
-        return self.get_text_from_element(MainPageLocators.ORDERS_FEED_HEAD)
+        return self.get_value(MainPageLocators.ORDERS_FEED_HEAD)
 
     @allure.step('Нажатие на ингредиент')
     def click_on_ingredient(self):

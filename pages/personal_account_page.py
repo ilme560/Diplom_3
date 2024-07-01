@@ -25,3 +25,7 @@ class PersonalAccountPage(BasePage):
         order_history = self.get_value(MainPageLocators.ORDER_NUMBER)
         order_feed = self.get_value(MainPageLocators.ORDER_NUMBER)
         assert order_history == order_feed
+
+    @allure.step('Проверка что открылась страница "Личный кабинет"')
+    def check_profile_button(self):
+        assert self.find_element_with_wait(ProfilePageLocators.PROFILE_BUTTON).is_displayed()

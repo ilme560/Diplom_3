@@ -5,7 +5,7 @@ from selenium.webdriver import ActionChains
 
 
 class BasePage:
-    def __init__(self, driver:WebDriver):
+    def __init__(self, driver: WebDriver):
         self.driver = driver
 
     def find_element_with_wait(self, locator):
@@ -26,9 +26,7 @@ class BasePage:
         action_chains.drag_and_drop(draggable, droppable).perform()
 
     def get_value(self, locator):
-        element = WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located(locator))
-        value = element.text
-        return value
+        return self.find_element_with_wait(locator).text
 
     def element_is_not_displayed(self, locator):
         return WebDriverWait(self.driver, 15).until(EC.invisibility_of_element_located(locator))
@@ -39,5 +37,3 @@ class BasePage:
     def element_is_present(self, locator):
         return WebDriverWait(self.driver, 15).until(EC.presence_of_element_located(locator))
 
-    def get_text_from_element(self, locator):
-        return self.find_element_with_wait(locator).text

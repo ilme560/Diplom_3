@@ -2,9 +2,6 @@ import allure
 from pages.main_page import MainPage
 from pages.login_page import LoginPage
 from pages.password_page import RestorePasswordPage
-from locators.password_page_locators import PasswordPageLocators
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 class TestRestorePassword:
@@ -15,8 +12,8 @@ class TestRestorePassword:
         main_page.click_on_personal_account()
         login_page = LoginPage(driver)
         login_page.click_on_restore_password_button()
-        WebDriverWait(driver, 5).until(EC.visibility_of_element_located(PasswordPageLocators.PASSWORD_RECOVERY_HEAD))
-        assert driver.find_element(*PasswordPageLocators.PASSWORD_RECOVERY_HEAD).text == 'Восстановление пароля'
+        restore_password_page = RestorePasswordPage(driver)
+        restore_password_page.check_password_recovery_head()
 
     @allure.title('Проверка раздела «Восстановление пароля»')
     @allure.description('Проверка ввода почты и клика по кнопке «Восстановить»')
@@ -28,9 +25,7 @@ class TestRestorePassword:
         restore_password_page = RestorePasswordPage(driver)
         restore_password_page.fill_email()
         restore_password_page.click_on_restore_button()
-        WebDriverWait(driver, 5).until(EC.visibility_of_element_located(PasswordPageLocators.PASSWORD_BUTTON))
-        password_button = driver.find_element(*PasswordPageLocators.PASSWORD_BUTTON)
-        assert password_button.is_displayed()
+        restore_password_page.check_show_password_button()
 
     @allure.title('Проверка раздела «Восстановление пароля»')
     @allure.description('Проверка клика по кнопке показать/скрыть пароль делает поле активным — подсвечивает его.')

@@ -51,4 +51,3 @@ def login(driver, user_registration):
     main_page.click_on_personal_account()
     login_page = LoginPage(driver)
     login_page.login(email, password)
-    return driver

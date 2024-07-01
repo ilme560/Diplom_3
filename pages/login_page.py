@@ -14,3 +14,7 @@ class LoginPage (BasePage):
         self.add_text_to_element(LoginPageLocators.EMAIL_INPUT_FIELD_LOGIN, email)
         self.add_text_to_element(LoginPageLocators.PASSWORD_INPUT_FIELD_LOGIN, password)
         self.click_on_element(LoginPageLocators.LOGIN_BUTTON)
+
+    @allure.step('Проверка что открылась форма авторизации')
+    def check_login_head(self):
+        assert self.find_element_with_wait(LoginPageLocators.LOGIN_HEAD).is_displayed()

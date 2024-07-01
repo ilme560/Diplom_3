@@ -1,0 +1,9 @@
+[18:58:28.541] - [32mINFO[0m - ====== WebDriver manager ======
+[18:58:29.316] - [32mINFO[0m - Get LATEST geckodriver version for 125.0 firefox
+[18:58:29.752] - [32mINFO[0m - Get LATEST geckodriver version for 125.0 firefox
+[18:58:29.975] - [32mINFO[0m - Get LATEST geckodriver version for 125.0 firefox
+[18:58:30.202] - [32mINFO[0m - Getting latest mozilla release info for v0.34.0
+[18:58:30.583] - [32mINFO[0m - About to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.34.0/geckodriver-v0.34.0-win64.zip
+[18:58:31.633] - [32mINFO[0m - Driver downloading response is 200
+[18:58:32.120] - [32mINFO[0m - Get LATEST geckodriver version for 125.0 firefox
+[18:58:32.370] - [32mINFO[0m - Driver has been saved in cache [C:\Users\ilme5\.wdm\drivers\geckodriver\win64\v0.34.0]

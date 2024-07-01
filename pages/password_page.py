@@ -1,13 +1,14 @@
 import allure
 from locators.password_page_locators import PasswordPageLocators
 from pages.base_page import BasePage
+from data import Data
 
 
 class RestorePasswordPage(BasePage):
 
     @allure.step('Заполнение поля "Email"')
     def fill_email(self):
-        email = 'ilme560@yandex.ru'
+        email = Data.email
         self.add_text_to_element(PasswordPageLocators.RECOVERY_EMAIL, email)
 
     @allure.step('Нажатие на кнопку "Восстановить"')
@@ -25,3 +26,7 @@ class RestorePasswordPage(BasePage):
     @allure.step('Проверка что поле "Пароль" активно')
     def check_active_field_password(self):
         assert self.find_element_with_wait(PasswordPageLocators.PASSWORD_FIELD_ACTIVE).is_displayed()
+
+    @allure.step('Проверка что открылась страница "Восстановление пароля"')
+    def check_password_recovery_head(self):
+        assert self.find_element_with_wait(PasswordPageLocators.PASSWORD_RECOVERY_HEAD).text == 'Восстановление пароля'

@@ -12,7 +12,7 @@ class MainPageLocators:
     PERSONAL_ACCOUNT_BUTTON = (By.LINK_TEXT, 'Личный Кабинет')
 
     # Заголовок главной страницы "Собери бургер"
-    TITLE_IN_THE_MAIN_PAGE = (By.XPATH, '//h1[contains(@class, "text text_type_main-large")]')
+    TITLE_IN_THE_MAIN_PAGE = (By.XPATH, '//h1[text()="Соберите бургер"]')
 
     # Заголовок в ленте заказов
     ORDERS_FEED_HEAD = (By.XPATH, '//h1[contains(text(),"Лента заказов")]')
