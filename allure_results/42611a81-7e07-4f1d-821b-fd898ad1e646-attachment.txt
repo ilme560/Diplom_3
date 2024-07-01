@@ -1,0 +1,4 @@
+[18:59:48.538] - [32mINFO[0m - ====== WebDriver manager ======
+[18:59:49.293] - [32mINFO[0m - Get LATEST geckodriver version for 125.0 firefox
+[18:59:49.665] - [32mINFO[0m - Get LATEST geckodriver version for 125.0 firefox
+[18:59:49.886] - [32mINFO[0m - Driver [C:\Users\ilme5\.wdm\drivers\geckodriver\win64\v0.34.0\geckodriver.exe] found in cache

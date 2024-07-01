@@ -1,0 +1,4 @@
+[18:59:37.828] - [32mINFO[0m - ====== WebDriver manager ======
+[18:59:38.512] - [32mINFO[0m - Get LATEST chromedriver version for google-chrome
+[18:59:38.670] - [32mINFO[0m - Get LATEST chromedriver version for google-chrome
+[18:59:38.837] - [32mINFO[0m - Driver [C:\Users\ilme5\.wdm\drivers\chromedriver\win64\126.0.6478.126\chromedriver-win32/chromedriver.exe] found in cache

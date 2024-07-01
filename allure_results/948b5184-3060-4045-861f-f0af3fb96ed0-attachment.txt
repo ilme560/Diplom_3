@@ -1,0 +1,10 @@
+[18:58:19.726] - [32mINFO[0m - ====== WebDriver manager ======
+[18:58:20.722] - [32mINFO[0m - Get LATEST chromedriver version for google-chrome
+[18:58:21.009] - [32mINFO[0m - Get LATEST chromedriver version for google-chrome
+[18:58:21.169] - [32mINFO[0m - Get LATEST chromedriver version for google-chrome
+[18:58:21.542] - [32mINFO[0m - WebDriver version 126.0.6478.126 selected
+[18:58:21.543] - [32mINFO[0m - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.126/win32/chromedriver-win32.zip
+[18:58:21.543] - [32mINFO[0m - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/126.0.6478.126/win32/chromedriver-win32.zip
+[18:58:21.733] - [32mINFO[0m - Driver downloading response is 200
+[18:58:22.802] - [32mINFO[0m - Get LATEST chromedriver version for google-chrome
+[18:58:23.067] - [32mINFO[0m - Driver has been saved in cache [C:\Users\ilme5\.wdm\drivers\chromedriver\win64\126.0.6478.126]

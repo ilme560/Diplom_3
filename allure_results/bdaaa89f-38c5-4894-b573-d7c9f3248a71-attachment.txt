@@ -1,0 +1,2 @@
+[17:58:43.059] - [32mINFO[0m - ====== WebDriver manager ======
+[17:58:43.814] - [32mINFO[0m - Get LATEST geckodriver version for 125.0 firefox
